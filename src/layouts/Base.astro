@@ -1,0 +1,44 @@
+---
+import '@fontsource-variable/bricolage-grotesque';
+import '@fontsource-variable/inter-tight';
+import '../styles/global.css';
+
+interface Props {
+  lang: 'fr' | 'en';
+  title: string;
+  description: string;
+  alternate?: { fr: string; en: string };
+  noindex?: boolean;
+}
+const { lang, title, description, alternate, noindex = false } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {alternate && (
+      <>
+        <link rel="alternate" hreflang="fr" href={new URL(alternate.fr, Astro.site)} />
+        <link rel="alternate" hreflang="en" href={new URL(alternate.en, Astro.site)} />
+        <link rel="alternate" hreflang="x-default" href={new URL(alternate.fr, Astro.site)} />
+      </>
+    )}
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta name="theme-color" content="#1846e0" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={lang === 'fr' ? 'fr_FR' : 'en_US'} />
+    <meta name="twitter:card" content="summary" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,51 @@
+---
+import { site, type Lang } from '../i18n/content';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const fr = lang === 'fr';
+---
+<main class="legal wrap">
+  <a class="back" href={fr ? '/' : '/en/'}>← {fr ? 'Retour' : 'Back'}</a>
+  <h1>{fr ? 'Mentions légales' : 'Legal notice'}</h1>
+
+  <h2>{fr ? 'Éditeur du site' : 'Publisher'}</h2>
+  <p>
+    Valentin Auclerc, {fr ? 'Entrepreneur individuel à responsabilité limitée (EIRL)' : 'Entrepreneur individuel à responsabilité limitée (EIRL, French sole proprietorship with limited liability)'}<br />
+    4 rue de Vincennes, 45800 Saint-Jean-de-Braye, France<br />
+    SIREN 892 737 958 · SIRET 892 737 958 00025<br />
+    {fr ? 'Immatriculé au Registre national des entreprises (RNE)' : 'Registered in the French National Business Register (RNE)'}<br />
+    {fr ? 'TVA non applicable, art. 293 B du CGI' : 'VAT not applicable, article 293 B of the French General Tax Code'}<br />
+    {fr ? 'Contact' : 'Contact'} : <a href={`mailto:${site.email}`}>{site.email}</a>
+  </p>
+  <p>{fr ? 'Directeur de la publication' : 'Publication director'} : Valentin Auclerc</p>
+
+  <h2>{fr ? 'Hébergement' : 'Hosting'}</h2>
+  <p>
+    GitHub, Inc. (GitHub Pages)<br />
+    88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, {fr ? 'États-Unis' : 'United States'}<br />
+    +1 877 448 4820 · <a href="https://pages.github.com" rel="noopener">pages.github.com</a>
+  </p>
+
+  <h2>{fr ? 'Données personnelles et cookies' : 'Personal data and cookies'}</h2>
+  <p>
+    {fr
+      ? "Ce site ne dépose aucun cookie, n'utilise aucun outil de mesure d'audience et ne collecte aucune donnée personnelle. Les polices sont servies depuis ce site, sans appel à un service tiers. L'hébergeur peut journaliser l'adresse IP des visiteurs à des fins de sécurité, selon sa propre politique de confidentialité."
+      : 'This site sets no cookies, uses no analytics and collects no personal data. Fonts are self-hosted, with no third-party requests. The host may log visitor IP addresses for security purposes, under its own privacy policy.'}
+  </p>
+
+  <h2>{fr ? 'Propriété intellectuelle' : 'Intellectual property'}</h2>
+  <p>
+    {fr
+      ? "Les textes de ce site sont la propriété de Valentin Auclerc. Mon EventSoft® et EventSoft® sont des marques d'Intrapole ; les visuels associés sont reproduits avec son accord. Echody est un produit édité par Valentin Auclerc EIRL."
+      : 'The texts on this site are owned by Valentin Auclerc. Mon EventSoft® and EventSoft® are trademarks of Intrapole; related visuals are reproduced with its consent. Echody is a product published by Valentin Auclerc EIRL.'}
+  </p>
+</main>
+
+<style>
+  .legal { max-width: 760px; padding: 56px 0 80px; }
+  .back { color: var(--blue); font-weight: 600; text-decoration: none; }
+  h1 { font-family: var(--display); font-size: clamp(38px, 6vw, 56px); letter-spacing: -.03em; margin: 24px 0 32px; }
+  h2 { font-family: var(--display); font-size: 22px; margin: 36px 0 10px; }
+  p { color: var(--muted); margin: 0 0 12px; }
+  a { color: var(--blue); }
+</style>

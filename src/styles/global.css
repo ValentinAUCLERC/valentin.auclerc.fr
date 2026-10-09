@@ -1,0 +1,37 @@
+:root {
+  --blue: #1846e0;
+  --blue-ink: #0f2fa8;
+  --blue-soft: #e8efff;
+  --peach: #ffd29e;
+  --orange: #c2410c;
+  --cream: #fffaf3;
+  --ink: #0b1533;
+  --muted: #4b5672;
+  --line: #ece6dc;
+  --display: 'Bricolage Grotesque Variable', 'Inter Tight Variable', system-ui, sans-serif;
+  --text: 'Inter Tight Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --radius: 28px;
+  --wrap: 1120px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--text);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--peach); outline-offset: 3px; border-radius: 6px; }
+
+.wrap { width: min(var(--wrap), 100% - 48px); margin-inline: auto; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
