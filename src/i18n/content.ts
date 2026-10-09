@@ -67,10 +67,9 @@ const fr = {
   },
   path: {
     title: 'Parcours',
-    // TODO(valentin) : année d'arrivée chez Intrapole
     items: [
       { y: '2026 →', t: 'Fondateur · Echody', d: 'Ma startup, développée sous mon EIRL.' },
-      { y: 'TODO →', t: 'Directeur technique adjoint · Intrapole / EventSoft', d: 'Lead et responsable de l’app Mon EventSoft.' },
+      { y: '2021 →', t: 'Directeur technique adjoint · Intrapole / EventSoft', d: 'Lead et responsable de l’app Mon EventSoft.' },
       { y: '2021 – 2025', t: 'Mentor Product Manager · OpenClassrooms', d: 'En indépendant : accompagnement d’étudiants de la formation Product Manager, des récits utilisateurs à la planification de sprints.' },
       { y: '2017 – 2021', t: 'Administrateur SI & Product Owner · Groupe Partnaire', d: 'Orléans. Product Owner d’une équipe Scrum : analyse des besoins utilisateurs, espace personnel Partnaire. Arrivé en stage, chargé de mission SI.' },
     ],
@@ -135,7 +134,7 @@ const en: typeof fr = {
     title: 'Experience',
     items: [
       { y: '2026 →', t: 'Founder · Echody', d: 'My startup, run through my own company.' },
-      { y: 'TODO →', t: 'Deputy CTO · Intrapole / EventSoft', d: 'Lead and owner of the Mon EventSoft app.' },
+      { y: '2021 →', t: 'Deputy CTO · Intrapole / EventSoft', d: 'Lead and owner of the Mon EventSoft app.' },
       { y: '2021 – 2025', t: 'Product Manager mentor · OpenClassrooms', d: 'Freelance: mentoring students of the Product Manager program, from user stories to sprint planning.' },
       { y: '2017 – 2021', t: 'IS administrator & Product Owner · Groupe Partnaire', d: 'Orléans. Product Owner of a Scrum team: user needs analysis, the Partnaire customer portal. Started as an IS intern.' },
     ],
