@@ -53,7 +53,7 @@ const fr = {
     title: 'Ce que je sais faire',
     items: [
       { t: 'Back-end PHP', d: '15 ans de PHP, de l’applicatif legacy à Symfony 8 et API Platform. Du code qui tient en production.' },
-      { t: 'Produit & équipe', d: 'Lead d’app, Product Owner (CSPO), habitué à faire avancer une équipe de devs en Scrum.' },
+      { t: 'Produit & équipe', d: 'Lead d’app, Product Owner (CSPO), habitué à faire avancer une équipe de devs en Scrum, et 4 ans mentor Product Manager chez OpenClassrooms.' },
       { t: 'DevOps & infra', d: 'Docker, CI/CD GitHub Actions, Proxmox, déploiements. J’aime que ce que je livre tourne tout seul.' },
       { t: 'IA appliquée', d: 'Agents de développement, intégrations LLM, bridge Symfony AI pour Mistral. L’IA au service du produit.' },
     ],
@@ -63,16 +63,16 @@ const fr = {
     items: [
       { t: 'cao', d: 'Caisse à outils : compose son environnement local à partir de workspaces cloisonnés, secrets chiffrés compris.', tag: 'Go', href: 'https://github.com/ValentinAUCLERC/cao' },
       { t: 'Symfony AI × Mistral', d: 'Bridge Symfony AI pour l’API Mistral Conversations.', tag: 'PHP', href: 'https://github.com/ValentinAUCLERC/BridgeMistalConversation' },
-      { t: 'BranchDeploy', d: 'Un accès rapide à chaque branche, piloté par IssueOps.', tag: 'GitHub Actions', href: 'https://github.com/ValentinAUCLERC/BranchDeploy' },
     ],
   },
   path: {
     title: 'Parcours',
-    // TODO(valentin) : dates et intitulés à compléter depuis LinkedIn (expérience non visible sans connexion)
+    // TODO(valentin) : année d'arrivée chez Intrapole
     items: [
       { y: '2026 →', t: 'Fondateur · Echody', d: 'Ma startup, développée sous mon EIRL.' },
-      { y: 'TODO →', t: 'Directeur technique adjoint · Intrapole / EventSoft', d: 'Lead de l’app Mon EventSoft.' },
-      { y: 'TODO', t: 'Chef de projet / Product Owner', d: 'TODO : entreprise et période.' },
+      { y: 'TODO →', t: 'Directeur technique adjoint · Intrapole / EventSoft', d: 'Lead et responsable de l’app Mon EventSoft.' },
+      { y: '2021 – 2025', t: 'Mentor Product Manager · OpenClassrooms', d: 'En indépendant : accompagnement d’étudiants de la formation Product Manager, des récits utilisateurs à la planification de sprints.' },
+      { y: '2017 – 2021', t: 'Administrateur SI & Product Owner · Groupe Partnaire', d: 'Orléans. Product Owner d’une équipe Scrum : analyse des besoins utilisateurs, espace personnel Partnaire. Arrivé en stage, chargé de mission SI.' },
     ],
   },
   contact: {
@@ -119,7 +119,7 @@ const en: typeof fr = {
     title: 'What I do',
     items: [
       { t: 'PHP back-end', d: '15 years of PHP, from legacy apps to Symfony 8 and API Platform. Code that holds up in production.' },
-      { t: 'Product & team', d: 'App lead, Product Owner (CSPO), used to moving a dev team forward with Scrum.' },
+      { t: 'Product & team', d: 'App lead, Product Owner (CSPO), used to moving a dev team forward with Scrum, and 4 years as a Product Manager mentor at OpenClassrooms.' },
       { t: 'DevOps & infra', d: 'Docker, GitHub Actions CI/CD, Proxmox, deployments. I like what I ship to run on its own.' },
       { t: 'Applied AI', d: 'Coding agents, LLM integrations, a Symfony AI bridge for Mistral. AI in service of the product.' },
     ],
@@ -129,15 +129,15 @@ const en: typeof fr = {
     items: [
       { t: 'cao', d: 'A toolbox to compose your local setup from isolated workspaces, encrypted secrets included.', tag: 'Go', href: 'https://github.com/ValentinAUCLERC/cao' },
       { t: 'Symfony AI × Mistral', d: 'Symfony AI bridge for the Mistral Conversations API.', tag: 'PHP', href: 'https://github.com/ValentinAUCLERC/BridgeMistalConversation' },
-      { t: 'BranchDeploy', d: 'Quick access to every branch, driven by IssueOps.', tag: 'GitHub Actions', href: 'https://github.com/ValentinAUCLERC/BranchDeploy' },
     ],
   },
   path: {
     title: 'Experience',
     items: [
       { y: '2026 →', t: 'Founder · Echody', d: 'My startup, run through my own company.' },
-      { y: 'TODO →', t: 'Deputy CTO · Intrapole / EventSoft', d: 'Lead of the Mon EventSoft app.' },
-      { y: 'TODO', t: 'Project manager / Product Owner', d: 'TODO: company and dates.' },
+      { y: 'TODO →', t: 'Deputy CTO · Intrapole / EventSoft', d: 'Lead and owner of the Mon EventSoft app.' },
+      { y: '2021 – 2025', t: 'Product Manager mentor · OpenClassrooms', d: 'Freelance: mentoring students of the Product Manager program, from user stories to sprint planning.' },
+      { y: '2017 – 2021', t: 'IS administrator & Product Owner · Groupe Partnaire', d: 'Orléans. Product Owner of a Scrum team: user needs analysis, the Partnaire customer portal. Started as an IS intern.' },
     ],
   },
   contact: {
